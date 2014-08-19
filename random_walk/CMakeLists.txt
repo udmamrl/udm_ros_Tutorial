@@ -64,6 +64,7 @@ find_package(catkin REQUIRED COMPONENTS
 #   Action2.action
 # )
 
+
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
@@ -103,16 +104,16 @@ include_directories(
 # )
 
 ## Declare a cpp executable
-# add_executable(random_walk_node src/random_walk_node.cpp)
+ add_executable(random_walk src/random_walk.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(random_walk_node random_walk_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(random_walk_node
-#   ${catkin_LIBRARIES}
-# )
+ target_link_libraries(random_walk
+   ${catkin_LIBRARIES}
+ )
 
 #############
 ## Install ##
