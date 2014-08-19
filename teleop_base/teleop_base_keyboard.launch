@@ -1,0 +1,6 @@
+<launch>
+  <!-- start teleop node -->
+  <node pkg="teleop_base" type="teleop_base_keyboard" output="screen" name="teleoper" >
+    <remap from="base_controller/command" to="/cmd_vel" />
+  </node>
+</launch>
